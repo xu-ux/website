@@ -1,0 +1,104 @@
+@media screen and (max-width: 980px){
+    .wapnone {
+        display: none;
+    }
+}
+body.night .footer-right-sidebar {
+    filter: brightness(70%);
+}
+.footer-right-sidebar {
+    max-height: 200px;
+    position: fixed;
+    right: 10px;
+    bottom: 30%;
+    font-size: 14px;
+    color: rgb(43, 70, 124);
+    z-index: 10000;
+}
+.footer-right-sidebar ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+.footer-right-sidebar ul li {
+    list-style: none;
+
+}
+.footer-right-sidebar ul li:hover {
+    cursor:pointer;
+}
+.footer-right-sidebar-box {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #e3e3e3f7;
+    box-shadow: 0 0 9px 0 rgb(0 0 0 / 10%);
+}
+
+.footer-right-sidebar-box.icon-dark{
+    z-index: 100;
+    background: url(/assets/icon/moon_dark.svg) no-repeat center center #fff;
+    background-size: 60%60%;
+}
+.footer-right-sidebar-box.icon-dark:hover{
+    z-index: 100;
+    background: url(/assets/icon/moon_dark_white.svg) no-repeat center center #fac43f;
+    background-size: 60%60%;
+}
+
+.footer-right-sidebar-box.octopus{
+    z-index: 100;
+    background: url(/assets/icon/octopus.svg) no-repeat center center #fff;
+    background-size: 62%62%;
+}
+.footer-right-sidebar-box.octopus:hover{
+    z-index: 100;
+    background: url(/assets/icon/octopus_white.svg) no-repeat center center #fac43f;
+    background-size: 62%62%;
+}
+.footer-right-sidebar-box.octopus{
+    z-index: 100;
+    background: url(/assets/icon/octopus.svg) no-repeat center center #fff;
+    background-size: 62%62%;
+}
+
+.footer-right-sidebar-box.qrcode{
+    z-index: 100;
+    background: url(/assets/icon/qr_code.svg) no-repeat center center #fff;
+    background-size: 60%60%;
+    /*color: #2dbd85;*/
+}
+.footer-right-sidebar-box.qrcode:hover{
+    z-index: 100;
+    background: url(/assets/icon/qr_code_white.svg) no-repeat center center #fac43f;
+    background-size: 60%60%;
+}
+.footer-right-sidebar-box.qrcode:hover .qrcode_content{
+    display: block;
+    opacity: 1;
+    transition: linear .2s;
+    animation-name: fade-in;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+
+.footer-right-sidebar-box.qrcode .qrcode_content {
+    width: 143px;
+    height: 170px;
+    border-radius: 3px;
+    background: #fff;
+    right: 62px;
+    position: absolute;
+    text-align: center;
+    border: 1px solid #e1e6ec;
+    display: none;
+    opacity: 0;
+}
+.qrcode_content .qrcode_image_box img {
+    padding: 10px;
+}
